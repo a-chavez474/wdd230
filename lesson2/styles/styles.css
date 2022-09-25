@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=League+Spartan:wght@300&family=Oregano&family=Raleway:wght@200&family=Roboto:wght@500&display=swap');
+
+body {
+  text-align: center;
+  color: rgb(10, 7, 54);
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 10px;
+  padding: 35px;
+}
+p {
+    font-family: "Roboto";
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+header {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 200px;
+  background-color: #6c9adf;
+  align-items: center;
+  border-radius: 5px;
+}
+.banner-box {
+  min-width: 100px;
+  max-width: 1600px;
+  margin: auto;
+}
+img {
+  width: 100px;
+  box-shadow: 5px 5px 10px whitesmoke;
+  border-radius: 5px;
+}
+
+footer {
+  background-color:#6c9adf;
+  padding: 25px 50px;
+  margin-top: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+h3 {
+  font-family: "Roboto";
+  font-size: 4em;
+}
