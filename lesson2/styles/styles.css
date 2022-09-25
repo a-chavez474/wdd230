@@ -12,7 +12,7 @@ p {
     font-family: "Roboto";
     font-size: 2em;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 header {
   display: grid;
