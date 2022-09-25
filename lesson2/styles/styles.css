@@ -8,6 +8,11 @@ body {
   font-size: 10px;
   padding: 35px;
 }
+h1 {
+    font-family: "Roboto";
+    font-size: 2em;
+    color: white;
+}
 p {
     font-family: "Roboto";
     font-size: 2em;
@@ -44,5 +49,5 @@ footer {
 }
 h3 {
   font-family: "Roboto";
-  font-size: 4em;
+  font-size: 1em;
 }
