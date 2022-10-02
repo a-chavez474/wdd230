@@ -1,0 +1,21 @@
+@media only screen and (min-width: 800px) {
+    body {
+        max-width: 750px;
+    }
+        nav {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            padding: 0px;
+        }
+        a {
+            padding: 25px;
+            font-size: 1.5rem; 
+        }
+        img {
+            width: 400px;
+        }
+    
+    
+    
+    }
