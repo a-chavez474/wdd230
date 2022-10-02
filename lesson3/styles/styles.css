@@ -6,9 +6,12 @@ body {
     margin: 0;
     max-width: 1600px;
     margin: 0 auto;
+    
 }   
 h1 {
     font-family: Abel;
+    justify-self: center;
+    align-self: center;
 }
 nav a {
     text-align: center;
@@ -20,8 +23,10 @@ nav a {
 }
 h2 {
     text-align: auto;
-    color: rgb(0, 0, 0);
+    color: rgb(13, 42, 173);
     text-decoration: none;
     font-family: "Abel";
     font-size: 40px;
+    justify-self: center;
+    align-self: center;
 }
