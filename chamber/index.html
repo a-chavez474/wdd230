@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bountiful Chamber Of Commerce</title>
-    <link href="styles/styles.css" rel="stylesheet">
-    <link href="styles/small.css" rel="stylesheet">
-    <link href="styles/medium.css" rel="stylesheet">
-    <link href="styles/large.css" rel="stylesheet">
-    <link href="styles/normalize.css" rel="stylesheet">
-    <link href="scripts/document.js" rel="stylesheet">
+    <title>Bountiful Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js"></script>
+    <link rel="icon" href="favicon.ico">
 </head>
-<body>
-    <header>
-        <img src="images/bountifulLogo.png" alt="logo">
-        <h1>Bountiful Chamber Of Commerce</h1>
-        <div id="lastModified"></div>
-    </header>
-    <nav>
-        <button>&#9776;</button>
-        <ul>
-            <li><a href="#" class="active">Discover</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Contact Us</a></li>
-            
-        </ul>
-    </nav>
-    <main>
 
-        <picture>
-            <img src="images/Bountiful.jpg" alt="A Bountiful image">
-        </picture>
-        <article>
-            <h2>Description</h2>
-            <p>This pen demostrates flex in the header and footer with middle alignment; grid in the main, some common properties and then three different techniques for the nav starting with flex. Inline-blocks and floats are commented out - to be swithed for comparison.
-            </p>
-        </article>
+<body>
+    <div id="content">
+        <header>
+            <img class="logo" src="images/bountifulLogo.png" alt="logo" style="width: 100px; height:100px">
+            <h1>Bountiful Chamber Of Commerce</h1>
+            <span>
+                Updated at:
+                <span id="time"></span>
+            </span>
+            <nav>
+              <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+                <li><a href="#">Page 4</a></li>
+              </ul>
+            </nav>
+        </header>
+    </div>
+    <main class="banner">
+        <img class="hero" src="images/Bountiful.jpg" alt="Main Street">
     </main>
     <footer>
-        <h3>Bountiful Chamber Of Commerce &copy; 2022 - Abel Chavez</h3>
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <img src="images/facebook.png" alt="fb icon">
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <img src="images/twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="images/instagram.png" alt="instagram icon">
-                </a>
-
-            </div>
+        <div class="copyright">
+            <h3>Bountiful Chamber Of Commerce &copy; 2022 - Abel Chavez</h3>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
     </footer>
-    
 </body>
+
 </html>
