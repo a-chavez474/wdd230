@@ -6,6 +6,5 @@ window.onload = function() {
   let dateTime = month + "/" + day + "/" + year + " " + now.toLocaleTimeString();
   document.getElementById("time").textContent = dateTime;
 }
-function toggleMenu() {
-  document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-}
+
+
