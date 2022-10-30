@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@600&family=Roboto:wght@300&display=swap');
+
+h1 {
+    font-family: "Oswald";
+    font-size: 2rem;
+    text-align: center;
+}
+header, main {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 5px;
+}
+main {
+    display: grid;
+    grid-auto-rows: 400px;
+    justify-content: center;
+    grid-row-gap: 20px;
+    padding: 10px;
+}
+
+img[data-src] {
+    /*it goes from bluring to not bluring above after 2 seconds. By specificity order this code takes priority over the img above. */
+    filter: blur(3px);
+}
+
+img {
+    filter: blur(0px);
+    transition: filter 0.6s;
+}
