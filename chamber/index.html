@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bountiful Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/script.js"></script>
     <link rel="icon" href="favicon.ico">
 </head>
-<body>
 <header>
-    <img class="logo" src="images/bountifulLogo.png" alt="logo" style="width: 100px; height:100px">
-    <h1>Bountiful</h1>
-    <h2>Chamber Of Commerce</h2>
-    <div class="social">
-        <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook.png" alt="fb icon">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <img src="images/twitter.png" alt="twitter icon">
-        </a>
+    <nav class="navbar">
+        <img src="images/bountifulLogo.png" alt="logo" style="width: 120px; height:120px">
+        <h1>Bountiful Chamber of Commerse</h1>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="discover.html" class="nav-link">Join</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Join Us</a>
+            </li>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact Us</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="update">
+    <span class="date">
+        Updated at:
+        <span id="time"></span>
+    </span>
     </div>
-<nav>
-    <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="discover.html">Discover</a>
-        <li><a href="#">Join</a>
-        <li><a href="#">Contact Us</a>
-    </ul>
-</nav>
-<span class="date">
-    Updated at: 
-    <span id="time"></span>
-</span>
-
+    <script src="scripts/script.js"></script>
 </header>
 
-<main>
-    <div class="leftbox">
-        <img src="#" alt="weather report">
-    </div>
-    <picture class="photoA">
-        <source media="(max-width: 400px)" srcset="images/400.jpg">
-        <source media="(max-width: 800px)" srcset="images/800.jpg">
-        <source media="(max-width: 1200px)" srcset="images/1200.jpg">
-        <img src="images/wdd230-org.jpg" alt="Original">
-
-    </picture>
-    <div class="righ box">
-        <img src="#" alt="data">
-    </div>
-</main>
-<footer>
-    <div class="copyright">
-        <h3>Bountiful Chamber Of Commerce &copy; 2022 - Abel Chavez</h3>
-    </div>
-    
-</footer>
+<body>
+    <main class="content">
+        <div class="weather"></div>
+        <div class="hero">
+            <img src="images/main.jpg" alt="Bountiful City">
+        </div>
+        <div class="announcement"></div>
+    </main>
+    <footer>
+        <div class="copyright">
+            <h3>Bountiful Chamber Of Commerce &copy; 2022 - Abel Chavez</h3>
+        </div>
+        <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48271.793046413986!2d-111.89196986268848!3d40.87215805801023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875257b087b1235f%3A0x4f1f8431cf23913!2sBountiful%2C%20UT%2084010!5e0!3m2!1sen!2sus!4v1667364496665!5m2!1sen!2sus"
+            width="150" height="150" style="border:2;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+         </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+        </div>
+    </footer>
 </body>
 
 </html>

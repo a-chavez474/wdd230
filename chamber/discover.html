@@ -1,30 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover</title>
-    <link rel="stylesheet" href="styles/discover.css"/>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+
 </head>
+
 <body>
     <header>
-        <h1>Discover Bountiful City</h1>
+        <nav class="navbar">
+            <img src="images/bountifulLogo.png" alt="logo" style="width: 120px; height:120px">
+            <h1>Bountiful Chamber of Commerse</h1>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="discover.html" class="nav-link">Join</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Join Us</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <span class="date">
+            Updated at:
+            <span id="time"></span>
+        </span>
+
+        <script src="scripts/script.js"></script>
     </header>
     <main>
-        <img src="images/garden.jpg" alt="chair" width="300" height="400">
-        <h2>Beautiful Gardens</h2>
-        <img src="images/bountifulfair.jpg" alt="chair" width="300" height="400">
-        <h2>Service at the Fair</h2>
-        <img src="images/aftershoping.jpg" alt="chair" width="300" height="400">
-        <h2>Summer days</h2>
-        <img src="images/lakesunset.jpg" alt="chair" width="300" height="400">
-        <h2>Beautiful sunsets</h2>
-        <img src="images/btemple.jpg" alt="chair" width="300" height="400">
-        <h2>Temple View</h2>
-
+        <div class="gallery">
+            <img src="images/chair.webp" alt="chair" width="300" height="400">
+            <h2>Chair</h2>
+            <img src="images/chapel.jpg" alt="chair" width="300" height="400">
+            <h2>Chapel</h2>
+            <img src="images/hill.jpg" alt="chair" width="300" height="400">
+            <h2>Hill</h2>
+            <img src="images/oldtree.jpg" alt="chair" width="300" height="400">
+            <h2>Old Tree</h2>
+            <img src="images/btemple.jpg" alt="chair" width="300" height="400">
+            <h2>Temple View</h2>
+        </div>
     </main>
     <script src="scripts/discover.js"></script>
-    
+
 </body>
+<footer>
+    <div class="copyright">
+        <h3>Bountiful Chamber Of Commerce &copy; 2022 - Abel Chavez</h3>
+    </div>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+    </div>
+</footer>
+
 </html>
