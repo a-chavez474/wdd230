@@ -5,21 +5,11 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
-*{
-	padding: 0;
-	margin: 120;
-	box-sizing: border-box;
-}
 header {
-	height: 120px;
+	height: 200px;
 	background-color: burlywood;
 	width: 100%;
 }
-img {
-	padding: 10px;
-}
-
 .date {
 	font-family: "Roboto";
 	
@@ -38,19 +28,28 @@ a {
 	font-size: 1.5rem;
 	color: brown;
 	text-decoration: none;
+
 }
 .navbar {
 	min-height: 70px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0 24px;
+	padding: 10px ;
+}
+.logo {
+	position: fixed;
+	top:5px;
+	left: 5px;
+	width: 100%;
+	padding: 10px;
 }
 .nav-menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 60px;
+
 }
 .nav-link {
 	transition: 0.7s ease;
@@ -130,7 +129,7 @@ footer {
 	.nav-menu {
 		position: fixed;
 		left: -100%;
-		top: 140px;
+		top: 170px;
 		gap: 0;
 		flex-direction: column;
 		background-color: #262626;
@@ -153,7 +152,7 @@ footer {
 
 	}
 	header {
-		height: 400px;
+		height: 430px;
 	}
 	.announcement {
 		position: relative;

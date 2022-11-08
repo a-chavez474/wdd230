@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/normalize.css" rel="stylesheet">
-    <!-- phone-default -->
-    <link href="styles/small.css" rel="stylesheet">
-    <!-- enhance-tablet -->
-    <link href="styles/medium.css" rel="stylesheet">
-    <!-- enhance-desktop -->
-    <link href="styles/large.css" rel="stylesheet">
     <title>join</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <header>
     <nav class="navbar">
@@ -22,10 +20,10 @@
                 <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="discover.html" class="nav-link">Join</a>
+                <a href="discover.html" class="nav-link">Discover</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Join Us</a>
+                <a href="join.html" class="nav-link">Join Us</a>
             </li>
             </li>
             <li class="nav-item">
@@ -39,10 +37,10 @@
         </div>
     </nav>
     <div class="update">
-    <span class="date">
-        Updated at:
-        <span id="time"></span>
-    </span>
+        <span class="date">
+            Last Updated:
+            <span id="time"></span>
+        </span>
     </div>
     <script src="scripts/script.js"></script>
 </header>
@@ -66,4 +64,11 @@
     <input type="submit" value="Propose My Aplication" class="submitBtn">
     </form>
 </body>
+<footer>
+    &copy; 2022 | Abel Chavez | All Rights Reserved | Today's Date: <span id="currentdate"></span>
+</footer>
+<script>
+    const options = {weekday: "long", day: "numeric", month: "long", year: "numeric"};
+    document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-US", options);
+  </script>
 </html>
