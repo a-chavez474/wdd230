@@ -34,10 +34,10 @@ body {
   
   img {
     max-height: 320px;
-    border-right: 1rem solid #EB9D1E;
-    border-top: 1rem solid #96620D;
-    border-bottom: 1rem solid #EFAD43;
-    border-left: 1rem solid #B1740F;
+    border-right: 1rem solid #0a8fe7;
+    border-top: 1rem solid #04476e;
+    border-bottom: 1rem solid #0a8fe7;
+    border-left: 1rem solid #04476e;
   }
   
   li {
@@ -45,11 +45,11 @@ body {
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
-    color: #08415C;
+    color: #0f6ae2;
   }
 
   footer {
     text-align: center;
-    color: white;
+    color: #04476e;
     font-size: 2rem;
   }
