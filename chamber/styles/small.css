@@ -1,163 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quicksand:wght@600&family=Roboto&display=swap');
 
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 header {
-	height: 200px;
-	background-color: burlywood;
-	width: 100%;
-}
-.date {
-	font-family: "Roboto";
+    color: rgb(0, 0, 0);
+    background-color: #ffb950;
+	display: flex;
 	
 }
-h3 {
+footer {
+	color: rgb(0, 0, 0);
+    background-color: #ffb950;
 	font-family: "Roboto";
 	text-align: center;
+	padding: 10px;
+}
+header, nav,
+main,
+footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 5px;
+}
+
+header img {
+    width: 100px;
+   	padding: 10px;
+}
+.hero {
+	width: 100%;
+}
+
+h1 {
+    text-align: center;
+	font-size: 1.5rem;
+	padding: 10px;
+}
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+}
+nav {
+    background-color: rgb(248, 143, 58);
+
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+	
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgba(0,0,0,0.5);
+	font-family: "Roboto";
+	text-align: center;
+	
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+	
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+
+.location {
+	margin: 10px auto;
+    padding: 15px;
+    background-color: #FFECD1;
+    color: black;
+}
+.social {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+
+}
+.map {
+	display: flex;
 	padding: 20px;
 }
 
-li {
-	list-style: none;
-}
-a {
-	font-family: "Roboto";
-	font-size: 1.5rem;
-	color: brown;
-	text-decoration: none;
-
-}
-.navbar {
-	min-height: 70px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px ;
-}
-.logo {
-	position: fixed;
-	top:5px;
-	left: 5px;
-	width: 100%;
-	padding: 10px;
-}
-.nav-menu {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 60px;
-
-}
-.nav-link {
-	transition: 0.7s ease;
-}
-.nav-link:hover {
-	color: dodgerblue;
-}
-.hamburger {
-	display: none;
-	cursor: pointer;
-}
-.bar {
-	display: block;
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	-webkit-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-	background-color: rgb(160, 65, 10);
-}
-.update {
-	background-color: brown;
-	text-align: center;
-	padding: 10px;
-
-}
-
-.content {
-	display: grid;
-	grid-row: 1fr 1fr 1fr;
-	width: 1200px;
-	height: 1200px;
-	margin: auto;
-	border: 5px solid black;
-	position: relative;
-	top: 60px;
-	padding: 10px;
-}
-.weather, .announcement {
-	width: 400px;
-	height: 400px;
-	border: 5px solid gray;
-	align-items: center;
-}
-.weather {
-	position: relative;
-	left: 0;
-	top: 0;
-}
-.announcement {
-	position: relative;
-	right: 0;
-	top: 0;
-}
-footer {
-	height: 220px;
-	width: 100%;
-	background-color: burlywood;
-	align-items: center;
-}
 
 
+nav ul {display: none;}
+nav ul.open {display: block;}
 
-@media(max-width:768px){
-	.hamburger{
-		display: block;
-	}
-	.hamburger.active .bar:nth-child(2){
-		opacity: 0;
-	}
-	.hamburger.active .bar:nth-child(1){
-		transform: translateY(8px) rotate(45deg);
-	}
-	.hamburger.active .bar:nth-child(3){
-		transform: translateY(-8px) rotate(-45deg);
-	}
-	.nav-menu {
-		position: fixed;
-		left: -100%;
-		top: 170px;
-		gap: 0;
-		flex-direction: column;
-		background-color: #262626;
-		width: 100%;
-		text-align: center;
-		transition: 0.3s;
-	}
-	.nav-item {
-		margin: 16px 0;
-	}
-	.nav-menu.active {
-		left: 0;
-	}
-	.content {
-		width: 400px;
-		height: 1200px;
-		margin: auto;
-		position: fix;
-		top: 10px;
+#hamburgerBtn span:nth-child(1) {display:block;}
+#hamburgerBtn span:nth-child(2) {display:none;}
 
-	}
-	header {
-		height: 430px;
-	}
-	.announcement {
-		position: relative;
-		bottom: 0;
-	}
-}
+#hamburgerBtn.open span:nth-child(1) {display:none;}
+#hamburgerBtn.open span:nth-child(2) {display:block;}
 
 

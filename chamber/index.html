@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abel Chavez">
     <title>Bountiful Chamber of Commerce</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -15,69 +17,59 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <div class="logo"></div>
-            <img src="images/bountifulLogo.png" alt="logo" style="width: 120px; height:120px">
-            </div>
-            <h1>Bountiful Chamber of Commerse</h1>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="discover.html" class="nav-link">Discover</a>
-                </li>
-                <li class="nav-item">
-                    <a href="join.html" class="nav-link">Join Us</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a href="directory.html" class="nav-link">Directory</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-        <div class="update">
-            <span class="date">
-                Last Update:
-                <span id="time"></span>
-            </span>
-        </div>
-        <script src="scripts/script.js"></script>
+        <picture class="logo">
+            <img src="images/bountifulLogo.png" alt="BCOC Logo">
+        </picture>
+        <section class="haeding">
+            <h1>Bountiful Chamber of Commerce</h1>
+        </section>
     </header>
-
-
-    <main class="content">
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
         <div class="weather"></div>
         <div class="hero">
             <img src="images/bountiful.jpg" alt="Bountiful City">
         </div>
         <div class="announcement"></div>
+        <section class="location">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48271.793046413986!2d-111.89196986268848!3d40.87215805801023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875257b087b1235f%3A0x4f1f8431cf23913!2sBountiful%2C%20UT%2084010!5e0!3m2!1sen!2sus!4v1667364496665!5m2!1sen!2sus"
+                    width="150" height="150" style="border:2;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+            </div>
+        </section>
+
     </main>
     <footer>
         <div class="copyright">
             <h3>Bountiful Chamber Of Commerce &copy; 2022 - Abel Chavez</h3>
         </div>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48271.793046413986!2d-111.89196986268848!3d40.87215805801023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875257b087b1235f%3A0x4f1f8431cf23913!2sBountiful%2C%20UT%2084010!5e0!3m2!1sen!2sus!4v1667364496665!5m2!1sen!2sus"
-                width="150" height="150" style="border:2;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
-            </a>
-            <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-        </div>
+        <div><span id="currentdate"></span></div>
+        <script>
+            const options = {weekday: "long", day: "numeric", month: "long", year: "numeric"};
+            document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-US", options);
+        </script>
     </footer>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>
