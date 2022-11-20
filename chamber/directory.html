@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directory</title>
-    <link rel="stylesheet" href="styles/directory.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Abel Chavez">
+        <title>Bountiful Chamber of Commerce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
 
 <body>
+    <header>
+        <picture class="logo">
+            <img src="images/bountifulLogo.png" alt="BCOC Logo">
+        </picture>
+        <section class="haeding">
+            <h1>Bountiful Chamber of Commerce</h1>
+        </section>
+    </header>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+        <ul id="primaryNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <div class="caption">
         <h6>Color Code Key</h6>
         <div class="gold"></div>
@@ -19,9 +43,7 @@
         <div class="bronze"></div>
         <p>Bronze Membership</p>
     </div>
-    <header>
-        <h1>Directory</h1>
-    </header>
+
 
     <main>
 
@@ -98,7 +120,18 @@
 
         </div>
     </main>
-    <script src="scripts/directory.js" defer></script>
+    <footer>
+        <div class="copyright">
+            <h3>Bountiful Chamber Of Commerce &copy; 2022 - Abel Chavez</h3>
+        </div>
+        <div><span id="currentdate"></span></div>
+        <script>
+            const options = {weekday: "long", day: "numeric", month: "long", year: "numeric"};
+            document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-US", options);
+        </script>
+    </footer>
+    <script src="scripts/script.js"></script>
+
 </body>
 
 </html>

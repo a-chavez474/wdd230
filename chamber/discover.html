@@ -1,53 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="icon" href="favicon.ico">
-
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Abel Chavez">
+        <title>Bountiful Chamber of Commerce</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/medium.css">
+        <link rel="stylesheet" href="styles/large.css">
+        <link rel="icon" href="favicon.ico">
+    </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <img src="images/bountifulLogo.png" alt="logo" style="width: 120px; height:120px">
-            <h1>Bountiful Chamber of Commerse</h1>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="discover.html" class="nav-link">Discover</a>
-                </li>
-                <li class="nav-item">
-                    <a href="join.html" class="nav-link">Join Us</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact Us</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-        <div class="update">
-            <span class="date">
-                Last Updated:
-                <span id="time"></span>
-            </span>
-        </div>
-        <script src="scripts/script.js"></script>
+        <picture class="logo">
+            <img src="images/bountifulLogo.png" alt="BCOC Logo">
+        </picture>
+        <section class="haeding">
+            <h1>Bountiful Chamber of Commerce</h1>
+        </section>
     </header>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li ><a href="index.html">Home</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    
     <main>
         <div class="gallery">
             <img src="images/chair.webp" alt="chair" width="300" height="400">
@@ -62,22 +50,18 @@
             <h2>Temple View</h2>
         </div>
     </main>
-    <script src="scripts/discover.js"></script>
-    
 
-</body>
 <footer>
-    <div class="copyright">
-        <h3>Bountiful Chamber Of Commerce &copy; 2022 - Abel Chavez</h3>
-    </div>
-    <div class="social">
-        <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook.png" alt="fb icon">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <img src="images/twitter.png" alt="twitter icon">
-        </a>
-    </div>
-</footer>
-
+        <div class="copyright">
+            <h3>Bountiful Chamber Of Commerce &copy; 2022 - Abel Chavez</h3>
+        </div>
+        <div><span id="currentdate"></span></div>
+        <script>
+            const options = {weekday: "long", day: "numeric", month: "long", year: "numeric"};
+            document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-US", options);
+        </script>
+    </footer>
+    <script src="scripts/script.js"></script>
+    
+</body>
 </html>
