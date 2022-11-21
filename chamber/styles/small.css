@@ -79,6 +79,15 @@ main figure.hero {
     margin: 0 0 0 0;
 }
 main figure.hero img {width: 100%;}
+main .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+main .gallery section {
+    text-align: center;
+    border: solid white 5px;
+}
 
 .location {
 	margin: 10px auto;

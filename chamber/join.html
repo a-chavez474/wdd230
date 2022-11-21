@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
     <header>
         <picture class="logo">
@@ -33,39 +35,46 @@
             <li><a href="contactus.html">Contact Us</a></li>
         </ul>
     </nav>
-    <form method="get" action="thankyou.html">
-        <fieldset>
-            <Legend>Applicant Information</Legend>
-            <label class="top">First Name* <input type="text" name="fname" required></label>
-            <label class="top">Last Name* <input type="text" name="lname" required></label>
-            <label class="top">Cell Phone Number* <input type="tel" name="phone" placeholder="1234441234"
-                    requiared></label>
-            <label class="top">E-mail* <input type="email" name="email" placeholder="someone@gmail.com"
-                    required></label>
-            <label class="top">Business Title <input type="text" name="code-mark" placeholder="7 characteres"
-                    pattern="[A-Za-z]{7}"></label>
-        </fieldset>
-        <fieldset>
-            <legend>Membership Level</legend>
-            <div>Level</div>
-            <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze</label>
-            <label class="sbs"><input type="radio" name="audience" value="silver"> Silver</label>
-            <label class="sbs"><input type="radio" name="audience" value="gold"> Gold</label>
-        </fieldset>
-        <input type="submit" value="Propose My Aplication" class="submitBtn">
-    </form>
-
-<footer>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <Legend>Applicant Information</Legend>
+                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Cell Phone Number* <input type="tel" name="phone" placeholder="1234441234"
+                        requiared></label>
+                <label class="top">E-mail* <input type="email" name="email" placeholder="someone@gmail.com"
+                        required></label>
+                <label class="top">Business Title <input type="text" name="code-mark" placeholder="7 characteres"
+                        pattern="[A-Za-z]{7}"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership Level</legend>
+                <div>Level</div>
+                <label class="sbs"><input type="radio" name="audience" value="bronze"> Bronze</label>
+                <label class="sbs"><input type="radio" name="audience" value="silver"> Silver</label>
+                <label class="sbs"><input type="radio" name="audience" value="gold"> Gold</label>
+            </fieldset>
+            <input type="submit" value="Propose My Aplication" class="submitBtn">
+        </form>
+    </main>
+    <footer>
         <div class="copyright">
             <h3>Bountiful Chamber Of Commerce &copy; 2022 - Abel Chavez</h3>
         </div>
         <div><span id="currentdate"></span></div>
         <script>
-            const options = {weekday: "long", day: "numeric", month: "long", year: "numeric"};
+            const options = {
+                weekday: "long",
+                day: "numeric",
+                month: "long",
+                year: "numeric"
+            };
             document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-US", options);
         </script>
     </footer>
     <script src="scripts/script.js"></script>
 
 </body>
+
 </html>
