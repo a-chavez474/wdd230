@@ -15,13 +15,13 @@ let weather = {
         const {icon, description} = data.weather[0];
         const {temp, humidity} = data.main;
         const {speed} = data.wind;
-        /*console.log(name, icon, description, temp, humidity, speed)*/
+        console.log(name, icon, description, temp, humidity, speed)
         document.querySelector(".city").innerText = "Weather in " + name;
-        /*document.querySelector(".icon").scr = "https://openweathermap.org/img/wn/" + icon + "@2x.png";*/
+        /*document.querySelector(".icon").scr = "https://openweathermap.org/img/n/${data.weather[0].icon}.png";*/
         document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText = temp + "°F"
+        document.querySelector(".temp").innerText = temp.toFixed(0) + "°F"
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind Speed: " + speed + "m/h";
+        document.querySelector(".wind").innerText = "Wind Speed: " + speed + "mph";
     },
     search: function (){
         this.fetchWeather(document.querySelector(".search-bar").value);

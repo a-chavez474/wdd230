@@ -16,7 +16,7 @@
 <body>
   <div class="card">
     <div class="search">
-      <input type="text" class="search-bar" placeholder="Search">
+      <input type="text" class="search-bar" placeholder="Search the weather in your city">
       <button><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
           width="1.5em" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -28,11 +28,11 @@
     <h2 class="city">Weather in Bountiful</h2>
     <h1 class="temp">51°F</h1>
     <div class="flex">
-    <img src="https://openweathermap.org/img/wn/@2x.png" alt="icon" class="icon" />
+    <img src= "https://openweathermap.org/img/n/${data.weather[0].icon}.png" alt="" class="icon" />
     <div class="description">Cloudy</div>
   </div>
     <div class="humidity">Humidity: 60%</div>
-    <div class="wind">Wind Speed: 6.2 ml/h</div>
+    <div class="wind">Wind Speed: 6.2 mph</div>
   </div>
 </body>
 
