@@ -17,7 +17,7 @@ let weather = {
         const {speed} = data.wind;
         console.log(name, icon, description, temp, humidity, speed)
         document.querySelector(".city").innerText = "Weather in " + name;
-        /*document.querySelector(".icon").scr = "https://openweathermap.org/img/n/${data.weather[0].icon}.png";*/
+        /*document.querySelector(".icon").scr = "https://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";*/
         document.querySelector(".description").innerText = description;
         document.querySelector(".temp").innerText = temp.toFixed(0) + "°F"
         document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";

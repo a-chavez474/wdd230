@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
+        <link rel="stylesheet" href="styles/join.css">
         <link rel="icon" href="favicon.ico">
     </head>
 <body>
@@ -33,7 +34,23 @@
         </ul>
     </nav>
     <main>
-
+        <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <fieldset>
+                    <Legend>Information</Legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Cell Phone Number* <input type="tel" name="phone" placeholder="1234441234"
+                            requiared></label>
+                    <label class="top">E-mail* <input type="email" name="email" placeholder="someone@gmail.com"
+                            required></label>
+                    <label class="top">Business Title <input type="text" name="code-mark" placeholder="12 characteres"
+                            pattern="[A-Za-z]{12}"></label>
+                    <label class="top">Message</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </fieldset>
+                <input type="submit" value="Send Information" class="submitBtn">
+               </form>
     </main>
     <footer>
         <div class="copyright">

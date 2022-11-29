@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    
     <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
+    <div id="banner" class="bannerDisplay" ></div><script src="scripts/banner.js"></script>
+
     <header>
         <picture class="logo">
             <img src="images/bountifulLogo.png" alt="BCOC Logo">
@@ -35,10 +38,6 @@
         </ul>
     </nav>
     <main>
-        <div class="weather">
-
-        </div>
-
         <figure class="hero">
             <img src="./images/Bountiful0.jpg" alt="Bountiful City" sizes="50vw"
             srcset="images/Bountiful200.jpg 200w,
@@ -46,10 +45,35 @@
                     images/Bountiful800.jpg 800w,
                     images/Bountiful1100.jpg 1100w">
         </figure>
+        <section class="content">
+        <div class="weather">
+            <h1>The Weather in Bountiful</h3>
+            <div>
+              <img src="" alt="" id="weather-icon">
+              <p><span id="temperature"></span>&deg; F</p>
+            </div>
+            <p><span id="currently"></span></p>
+            <p>Wind Chill: <span id="chill"></span>&deg; F</p>
+            <p>Wind Speed: <span id="speed"></span> MPH</p>
+        </div>
 
-        <div class="announcement">
+        <div class="upcoming">
+            <h1>Upcoming Events</h3>
+            <h2>🎄  Christmas at the Central Park</h2>
+            <p>Come and enjoy the ornaments clebrating christmas as community
+                as always in our central park.
+            </p>
+            <h2>🎊  New Year's Eve</h2>
+            <p>We will  be celebrating the new year with the traditional count down at
+                City Hall front park starting at 10:00 pm.
+            </p>
+            <h2>⛸️ Ice Skating Competition</h2>
+            <p>Insciptions are open for our ice skating competition at the building of
+                our recreational center.
+            </p>
 
         </div>
+        </section>
         <section class="location">
             <div class="map">
                 <iframe
