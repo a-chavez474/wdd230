@@ -12,7 +12,3 @@ nav ul li a {
     grid-gap: 30px;
 } 
 }
-.content {
-    display: flex;
-    justify-content: space-between;
-}
