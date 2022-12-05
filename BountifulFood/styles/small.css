@@ -16,7 +16,7 @@ footer {
 
 header {
     color: rgb(0, 0, 0);
-    background-color: #ffb950;
+    background-color: #dcf876;
 	display: flex;
 }
 nav button {
@@ -24,10 +24,10 @@ nav button {
     background: transparent;
     border: none;
     font-size: 2rem;
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 nav {
-    background-color: rgb(248, 143, 58);
+    background-color: rgb(184, 10, 10);
 
 }
 nav ul {
@@ -71,3 +71,11 @@ main figure.hero img {
     margin: 0 0 0 0;
 }
 main figure.hero img {width: 100%;}
+
+footer {
+	color: rgb(0, 0, 0);
+    background-color: #dcf876;
+	font-family: "Roboto";
+	text-align: center;
+	padding: 10px;
+}
