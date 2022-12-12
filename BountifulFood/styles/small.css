@@ -9,16 +9,28 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 header, nav,
 main,
 footer {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     padding-top: 5px;
 }
 
 header {
     color: rgb(0, 0, 0);
-    background-color: #dcf876;
+    background-color: #ddf587;
 	display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+h1 {
+    font-family: "Roboto";
+}
+.logo {
+    padding: 10px;
+}
+.social {
+    padding: 10px;
+}
+
 nav button {
     margin: .2rem 2vw;
     background: transparent;
@@ -27,14 +39,14 @@ nav button {
     color: rgb(0, 0, 0);
 }
 nav {
-    background-color: rgb(184, 10, 10);
+    background-color: rgb(252, 143, 143);
 
 }
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-	
+
 }
 nav ul li a {
     display: block;
@@ -44,7 +56,7 @@ nav ul li a {
     border-top: 1px solid rgba(0,0,0,0.5);
 	font-family: "Roboto";
 	text-align: center;
-	
+
 }
 
 nav ul li.active a {
@@ -69,8 +81,65 @@ main figure.hero img {
     display: flex;
     justify-content: center;
     margin: 0 0 0 0;
+    width: 100%;
 }
-main figure.hero img {width: 100%;}
+
+p {
+    font-family: "Oswald";
+    size: 4rem;
+    padding: 10px;
+}
+div.button-box {
+    margin: auto;
+    background-color: rgb(252, 143, 143);
+    padding: 10px;
+}
+.button-box {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+.fresh {
+    background-color: rgb(250, 247, 99);
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.fresh:hover {
+    background-color: #79ca54;
+    color: black;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather  {
+    margin: 2rem 0;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: #79ca54;
+    text-align: center;
+    width: 48%;
+}
+
+.locations  {
+    margin: 2rem 0;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: #79ca54;
+    text-align: center;
+    width: 48%;
+}
 
 footer {
 	color: rgb(0, 0, 0);
@@ -78,4 +147,5 @@ footer {
 	font-family: "Roboto";
 	text-align: center;
 	padding: 10px;
+    
 }

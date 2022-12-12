@@ -16,13 +16,13 @@
 
 <body>
     <header>
-        <picture class="logo">
+        <div class="logo">
             <img src="images/logo1.png" alt="Logo">
-        </picture>
-        <section class="haeding">
+        </div>
+        <div class="haeding">
             <h1>Bountiful Food</h1>
-        </section>
-        <section class="social">
+        </div>
+        <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook1.png" alt="fb icon">
             </a>
@@ -33,7 +33,7 @@
             <a href="https://twitter1.com" target="_blank">
                 <img src="images/twitter1.png" alt="twitter icon">
             </a>
-        </section>
+        </div>
     </header>
     <nav>
         <button id="hamburgerBtn"><span>&#9776</span><span>X</span></button>
@@ -45,20 +45,60 @@
         </ul>
     </nav>
     <main>
-        <figure class="hero">
-            <img src="./images/hero0.jpg" alt="Bountiful Food" sizes="50vw" srcset="images/hero200.jpg 200w,
+        <div class="heros">
+            <figure class="hero">
+                <img src="./images/hero0.jpg" alt="Bountiful Food" sizes="50vw" srcset="images/hero200.jpg 200w,
                 images/hero500.jpg 500w,
                 images/hero800.jpg 800w,
                 images/hero1100.jpg 1100w">
-        </figure>
+            </figure>
+            <div class="button-box">
+                <a class="fresh" href="fresh.html">Get Your Drink Now</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="weather">
+                <h1>The Weather in Carlsbad</h1>
+                <div>
+                    <img src="" alt="" id="weather-icon">
+                    <h1><span id="temperature"></span>&deg; F</h1>
+                </div>
+                <p><span id="currently"></span></p>
+                <p>Wind Chill: <span id="chill"></span>&deg; F</p>
+                <p>Wind Speed: <span id="speed"></span> MPH</p>
+            </div>
+            <div class="locations">
+                <h2>LOCATIONS</h2>
+                <H3>Carlsbad Main Store</H3>
+                <p>Direccion</p>
+                <hr>
+                <H3>Santa Monica Store</H3>
+                <p>Direccion</p>
+                <hr>
+                <H3>San Diego Store</H3>
+                <p>Direccion</p>
+            </div>
+        </div>
     </main>
     <script src="scripts/script.js"></script>
 
     <footer>
         <div class="copyright">
-            <h3>Bountiful Food &copy; 2022 - Abel Chavez</h3>
+            <h3>Bountiful Food &copy; 2022 - Abel Chavez</h3> <span id="currentdate"></span>
         </div>
     </footer>
+    <script>
+        //tolocalDateString
+        const options = {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        };
+        document.getElementById("currentdate").textContent = new Date().toLocaleDateString("en-US", options);
+        //const todaysdate = new Date();
+        /*console.log(todaysdate);*/
+    </script>
 </body>
 
 </html>
