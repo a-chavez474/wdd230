@@ -37,3 +37,17 @@ fetch(weatherApiURL)
       document.querySelector("#currently").textContent = finaldesc;
     }
   });
+
+const requestURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
+const cards = document.querySelector(".fruits");
+
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);
+    const drinks = jsonObject["drinks"];
+    drinks.forEach(displayDrinks);
+  });
+
