@@ -21,6 +21,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 h1, h2, h3 {
     font-family: "Roboto";
 }
@@ -95,8 +96,8 @@ div.button-box {
     padding: 10px;
 }
 .button-box {
-    display: grid;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
   }
@@ -107,7 +108,7 @@ div.button-box {
     text-decoration: none;
     font-family: "Roboto";
     font-size: 18px;
-    padding: 15px 30px;
+    padding: 10px 20px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -199,4 +200,16 @@ form label.top input:required {
 }
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+main .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+main .gallery section {
+    font-family: "Roboto";
+    text-align: center;
+    background-color: #faf2ae;
+    padding-bottom: 10px;
 }
