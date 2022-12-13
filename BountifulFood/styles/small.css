@@ -213,3 +213,13 @@ main .gallery section {
     background-color: #faf2ae;
     padding-bottom: 10px;
 }
+
+#fruits-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Roboto";
+    gap: 10px;
+    color: #445ba9;
+    
+    
+}

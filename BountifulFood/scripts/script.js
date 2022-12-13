@@ -38,19 +38,16 @@ fetch(weatherApiURL)
     }
   });
 
-const requestURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
-const cards = document.querySelector(".fruits");
-
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject);
-    const drinks = jsonObject["drinks"];
-    drinks.forEach(displayDrinks);
-  });
-
-
-
+const container = document.getElementById("fruits-container");
+fetch("https://brotherblazzard.github.io/canvas-content/fruit.json")
+.then((response) => response.json())
+.then((fruits) => {fruits.forEach(fruit => {const newFruit = document.createElement("label");
+const checkbox = document.createElement("input");
+checkbox.type = "checkbox";
+checkbox.name = "fruits";
+checkbox.value = fruit.id;
+newFruit.textContent = fruit.name;
+newFruit.prepend(checkbox);
+container.appendChild(newFruit);
+})});
 
