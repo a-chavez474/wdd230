@@ -14,8 +14,27 @@
 <body>
     <main>
         <h1>Membership Proposal Application</h1>
-            <p>Thanks you for applying for membership at the Bountiful Chamber of Commerse. We will get back to you within a week with a response.</p>
-    
+            <p>Thanks you for applying for membership at the Bountiful Chamber of Commerse. 
+                We will get back to you within a week with a response.</p>
+                <h2>Make a drop down list based on JSON data.</h2>
+                <p id="demo"></p>
+                
+                <script>
+                const dbParam = JSON.stringify({table:"customers",limit:20});
+                const xmlhttp = new XMLHttpRequest();
+                xmlhttp.onload = function() {
+                  const myObj = JSON.parse(this.responseText);
+                  let text = "<select>"
+                  for (let x in myObj) {
+                    text += "<option>" + myObj[x].name + "</option>";
+                  }
+                  text += "</select>"
+                  document.getElementById("demo").innerHTML = text;
+                }
+                xmlhttp.open("POST", "json_demo_html_table.php");
+                xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xmlhttp.send("x=" + dbParam);
+                </script>
     </main>
 </body>
 </html>
