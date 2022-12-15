@@ -98,16 +98,40 @@ p {
     padding: 10px;
 }
 div.button-box {
-    margin: auto;
     background-color: rgb(252, 143, 143);
-    padding: 10px;
+    padding: 20px;
 }
 .button-box {
-    display: flex;
-    justify-content: space-between;
+    /*display: flex;
+    justify-content: space-between;*/
     align-items: center;
     text-align: center;
   }
+  .drinks img {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .drink {
+    background-color: rgb(250, 247, 99);
+    color: black;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.drink:hover {
+    background-color: rgb(252, 143, 143);
+    color: black;
+}
 
 .fresh {
     background-color: rgb(250, 247, 99);
@@ -131,13 +155,28 @@ div.button-box {
     justify-content: space-between;
 }
 
+.drinks {
+    margin: 2rem 0;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    background-color: #79ca54;
+    text-align: center;
+    width: 30%;
+    align-items: center;
+}
+
+.submitBtn {
+    font-family: "Oswald";
+    font-size: 1rem;
+}
+
 .weather  {
     margin: 2rem 0;
     border-radius: 10px;
     padding: .5rem 2%;
     background-color: #79ca54;
     text-align: center;
-    width: 48%;
+    width: 30%;
 }
 
 .locations  {
@@ -146,7 +185,7 @@ div.button-box {
     padding: .5rem 2%;
     background-color: #79ca54;
     text-align: center;
-    width: 48%;
+    width: 30%;
 }
 
 footer {
